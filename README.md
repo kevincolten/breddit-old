@@ -1,30 +1,26 @@
 # breddit
 A better Reddit
 
-`composer global require "laravel/installer=~1.1"`
+1. Install global Laravel package: `composer global require "laravel/installer=~1.1"`
 
-`laravel new breddit`
+2. Create new Laravel project: `laravel new breddit`
 
-`cd breddit`
+3. Navigate into project directory: `cd breddit`
 
-`git init`
+4. Initialize git repository: `git init` and create first commit: `git commit -am  "Initial commit"`
 
-`cp .env.example .env`
+5. Install dependencies: `composer update` and `npm install`
 
-`npm install`
+6. Create environment file: `cp .env.example .env`
 
-`composer self-update`
+7. Generate unique application key: `php artisan key:generate`
 
-`composer update`
+8. Set local development database to use SQLite by adding `DB_CONNECTION='sqlite'` to `.env`
 
-`php artisan key:generate`
+9. (Git)Ignore local development database by adding `database/database.sqlite` to `.gitignore`
 
-Add `DB_CONNECTION='sqlite'` to `.env`
+10. Create local database with `touch database/database.sqlite`
 
-Add database/database.sqlite` to `.gitignore`
+11. Run default authentication migrations: `php artisan migrate`
 
-`touch database/database.sqlite`
-
-`php artisan migrate`
-
-`php artisan serve`
+12. Run development server: `php artisan serve`
