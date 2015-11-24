@@ -24,3 +24,5 @@ A better Reddit
 11. Run default authentication migrations: `php artisan migrate`
 
 12. Run development server: `php artisan serve`
+
+[Database Schema](https://gist.github.com/mistakevin/7152054fcdf022e73e71)
