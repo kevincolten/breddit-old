@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSubbredditUsersTable extends Migration
+class CreateSubbredditUserTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreateSubbredditUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('subbreddit_users', function (Blueprint $table) {
+        Schema::create('subbreddit_user', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
 
@@ -28,6 +28,6 @@ class CreateSubbredditUsersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('subbreddit_users');
+        Schema::drop('subbreddit_user');
     }
 }

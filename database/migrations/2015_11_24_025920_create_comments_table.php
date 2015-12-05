@@ -18,8 +18,8 @@ class CreateCommentsTable extends Migration
 
             $table->text('text');
             $table->integer('user_id');
-            $table->integer('comment_id');
-            $table->integer('post_id');
+            $table->integer('comment_id')->nullable();
+            $table->integer('post_id')->nullable();
         });
     }
 
