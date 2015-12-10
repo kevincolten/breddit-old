@@ -12,10 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
-Route::get('home', function () {
+Route::get('/login', function () {
     if (Auth::guest()) {
         return Redirect::to('auth/login');
     } else {
